@@ -1,4 +1,4 @@
-import { DefaultWeatherPredictorService, Weather } from "./services/WeatherPredictorService";
+import { DefaultWeatherPredictorService, Weather } from "../services/WeatherPredictorService";
 
 export const getWeather = (date: Date) => { 
     const s = new DefaultWeatherPredictorService();

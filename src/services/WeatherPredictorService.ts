@@ -17,7 +17,7 @@ export const weatherForecast: {[k: string]:Weather} = {
     "December" : Weather.SNOW
 };
 
-export interface WeatherPredictorService {
+interface WeatherPredictorService {
 	getWeather(date: Date): Weather;
 	updateWeather(date: Date, weather: Weather): void;
 }

@@ -2,8 +2,8 @@
 import express from 'express';
 import Joi from 'Joi';
 import bodyParser from 'body-parser';
-import { Weather } from './services/WeatherPredictorService';
-import { getWeather, updateWeather } from './Weather.controller';
+import { Weather } from '../services/WeatherPredictorService';
+import { getWeather, updateWeather } from '../controllers/Weather.controller';
 
 
 const app = express();
