@@ -18,7 +18,7 @@ app.get('/predict', (req, res) => {
     res.status(200).send(response);
 });
 
-app.post('/update', (req, res) => {
+app.patch('/update', (req, res) => {
     const { error } = validateUpdate(req.body.date, req.body.weather); 
     if (error) return res.status(400).send(error.details[0].message);
 
